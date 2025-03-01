@@ -14,7 +14,7 @@ public class AntiAfk extends Hack{
 	
 	public AntiAfk() {
 		super("AntiAfk", HackCategory.ANOTHER);
-		this.GUIName = "反Afk";
+		this.GUIName = "反挂机踢";
 		
 		this.timer = new TimerUtils();
 		this.delay = new DoubleValue("延迟秒", 10.0D, 1.0D, 100.0D);
