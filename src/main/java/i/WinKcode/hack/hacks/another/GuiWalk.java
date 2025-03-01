@@ -14,7 +14,7 @@ public class GuiWalk extends Hack{
 
 	public GuiWalk() {
 		super("GuiWalk", HackCategory.ANOTHER);
-		this.GUIName = "打开GUI时走路";
+		this.GUIName = "GUI走路";
 	}
 	
 	@Override
