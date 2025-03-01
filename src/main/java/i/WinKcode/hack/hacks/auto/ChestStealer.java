@@ -23,7 +23,7 @@ public class ChestStealer extends Hack{
 	
 	public ChestStealer() {
 		super("ChestStealer", HackCategory.AUTO);
-		this.GUIName = "宝箱窃取者";
+		this.GUIName = "自动拿箱";
 		
 		delay = new IntegerValue("延迟", 4, 0, 20);
 		
