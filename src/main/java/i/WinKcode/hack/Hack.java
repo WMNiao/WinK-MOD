@@ -21,8 +21,9 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 import java.util.ArrayList;
 
 public class Hack {
-	
+
 	private String name;
+	private String Description = null;
 	private HackCategory category;
 	private boolean toggled;
 	private boolean show;
@@ -38,7 +39,14 @@ public class Hack {
 		this.show = true;
 		this.key = -1;
 	}
-	
+	public Hack(String name, HackCategory category,String description) {
+		this.name = name;
+		this.Description = description;
+		this.category = category;
+		this.toggled = false;
+		this.show = true;
+		this.key = -1;
+	}
 	public void addValue(Value... values) {
         for (Value value : values) {
             this.getValues().add(value);
@@ -134,7 +142,7 @@ public class Hack {
     }
     
     public String getDescription() {
-		return null;
+		return Description;
 	}
     
 	public String getName() {
